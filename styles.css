@@ -1,0 +1,194 @@
+/* Apply the color-changing animation to the body */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg,#30197d ,#6400d6 ,#8f2cff, #a455ff, #a455ff, #30197d, #30197d,#30197d);
+    background-size: 100% 400%; /* Extend the gradient vertically */
+    animation: moveBackgroundUp 10s infinite;
+}
+
+/* Define the keyframes for the animation */
+@keyframes moveBackgroundUp {
+    0% {
+        background-position: 0% 100%; /* Start at the bottom */
+    }
+    100% {
+        background-position: 0% 0%; /* Move to the top */
+    }
+}
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: linear-gradient(45deg,#30197d ,#6400d6 ,#8f2cff, #a455ff, #a455ff, #30197d, #30197d,#30197d);
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero .btn {
+    background-color: linear-gradient(45deg,#30197d ,#6400d6 ,#8f2cff, #a455ff, #a455ff, #30197d, #30197d,#30197d);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: linear-gradient(45deg,#30197d ,#6400d6 ,#8f2cff, #a455ff, #a455ff, #30197d, #30197d,#30197d);
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    background-color: linear-gradient(45deg,#30197d ,#6400d6 ,#8f2cff, #a455ff, #a455ff, #30197d, #30197d,#30197d);
+    margin-bottom: 1rem;
+}
+
+.about {
+    background-color: linear-gradient(45deg,#30197d ,#6400d6 ,#8f2cff, #a455ff, #a455ff, #30197d, #30197d,#30197d);;
+}
+
+.products .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.products .product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.products .product-item:hover {
+    transform: translateY(-10px);
+}
+
+.products .product-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.products .product-item h3 {
+    margin: 0.5rem 0;
+}
+
+.products .product-item .btn {
+    background-color: #444;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.products .product-item .btn:hover {
+    background-color: linear-gradient(45deg,#30197d ,#6400d6 ,#8f2cff, #a455ff, #a455ff, #30197d, #30197d,#30197d);;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: linear-gradient(45deg,#30197d ,#6400d6 ,#8f2cff, #a455ff, #a455ff, #30197d, #30197d,#30197d);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #e5533d;
+}
+
+footer {
+    text-align: center;
+    background-color: linear-gradient(45deg,#30197d ,#6400d6 ,#8f2cff, #a455ff, #a455ff, #30197d, #30197d,#30197d);
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
